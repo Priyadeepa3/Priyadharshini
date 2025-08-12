@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		  System.out.print("Enter first number (double): ");
+	        double a = sc.nextDouble();
+
+	        System.out.print("Enter second number (double): ");
+	        double b = sc.nextDouble();
+
+	        System.out.println("Choose operation:\n1: Add\n2: Subtract\n3: Multiply\n4: Divide\n5: Modulus");
+	        System.out.print("Enter operation number: ");
+	        int operation = sc.nextInt();
+		
+		switch(operation) {
+		case 1 :  
+			System.out.println(" Addiction : " + (a + b));
+			break;
+		case 2 :
+			System.out.println("Subtraction : " + (a - b));
+			break;
+		case 3 :
+			System.out.println( " Multiplication : "+ (a * b));
+			break;
+		case 4 : 
+			System.out.println(" Divide : " + (a / b));
+			break;
+		case 5 :
+			System.out.println("This quotient : " +(a % b));
+			break;
+		 default:
+             System.out.println("Invalid operation");
+			
+		}
+
+	}
+
+}
